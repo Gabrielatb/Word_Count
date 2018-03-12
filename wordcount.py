@@ -5,11 +5,11 @@ def get_word_count(filename):
     data = open(filename)
     word_count = {}
     for line in data:
-        words = line.rstrip()
-        words = line.split(" ")
+        words = line.strip()
+        words = words.split(" ")
         for word in words:
             word_count[word] = word_count.get(word, 0) + 1
-        print word_count
+    print word_count
         #word_count[word] = word_count.get(word, 0)
     #return word_count
     data.close()
