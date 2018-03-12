@@ -9,7 +9,7 @@ def get_word_count(filename):
         words = words.split(" ")
         for word in words:
             word_count[word] = word_count.get(word, 0) + 1
-    print word_count
+    return word_count
         #word_count[word] = word_count.get(word, 0)
     #return word_count
     data.close()
